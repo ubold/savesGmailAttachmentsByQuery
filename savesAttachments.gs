@@ -19,7 +19,8 @@ function getAttachmentsFromGmail() {
   var threadLimit = 4; 
   
   // CHANGE THIS
-  var folderName = "title contains 'AttachmentFolder'";
+  var folderName = "AttachmentFolder";
+  var folderQuery = "title contains '"+folderName+"'";
   var folderSearch = DriveApp.searchFolders(folderName);
   var attachmentFolder; 
   
